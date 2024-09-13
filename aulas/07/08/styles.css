@@ -1,0 +1,48 @@
+header{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+    
+}
+nav ul{
+    list-style-type: nome;
+   /* padding: 0;*/
+   text-align: center;
+
+}
+nav ul li{
+    display: inline;
+    margin-right:15px;
+}
+/* stylo para conteudo principal*/
+main{
+    margin: 15px;
+    padding: 20px;
+    background-color: #f4f4f4;
+
+}
+section{
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+/* Estilos ´para o conteudo complementar (aside)*/
+aside{
+    background-color: #e9ecef;
+    padding: 15px;
+    border-left: 5px solid #444;
+}
+/* estilos para o rodape*/
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
