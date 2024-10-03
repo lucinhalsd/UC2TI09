@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionar elementos</title>
+</head>
+<body>
+    <header>
+        <h1>Propriedades <em>position</em>no css e como posicionar elementos</h1>
+    </header>
+    <main
+    <h2>Introdução</h2>
+    <p>
+        No CSS, a propriedade position é usada para definir como os elementos
+        serão posicionados na página. Ela oferece controle sobre o posicionamento,
+        permitindo criar layouts mais dinâmicos e precisos.
+    </p>
+    <hr>
+    <h2>Valores da Propriedade <em>position</em></h2>
+    <ul>
+        <li>Static</li>
+        <ul>
+            <li><em>Definição:</em> É o valor padrão. O elemento é posicionado de acordo com o fluxo da página</li>
+            <li>
+                <em>Exemplo:</em>
+                <pre>
+                    <code>
+div {
+position: static
+}
+                    </code>
+                </pre>
+            </li>
+        </ul>
+        <li>Relative</li>
+        <ul>
+            <li><em>Definição:</em> O elemento é posicionado em relação à sua posição original no fluxo da página.
+                Utiliza as propriedades <em>top, right, bottom e left</em> para ajustar o deslocamento a partir da pagina original
+            <li><em>Exemplo:</em>
+                <pre>
+                    <code>
+                    .box {
+                        position: relative;
+                        top: 20px; /* Move 20px para baixo da posição original */
+                        left: 30px; /* Move 30px para a direita */
+                    }
+
+                    </code>
+                </pre>
+                <li>
+                    <ul>
+                        <li>Absolute</li>
+                        <ul>
+                            <li><em>Definição: </em>O elemento é fixado em relação ao seu container pai
+                                mais próximo que tenha a propriedade <em>position</em> diferente de static.</li>
+                                </li> 
+                                <pre>
+                                    <code>
+                                        .parent {
+                                            position: relative;
+                                            
+                                        }
+                                        .child {
+                                            position: absolute;
+                                            top:10px; /*10px do topo de conteiner pai*/
+                                        }
+                                    </code>
+                                </pre>
+                                <li>fixed</li>
+                                <ul>
+                                    <li><em>Definição: </em>O elemnto é fixado em uma posição específica da janela
+                                        (viewport) e permanece no mesmo lugar, mesmo ao rolar a página.</li>
+                                        <li><em>Exemplo: </em>
+                                            <pre>
+                                                <code>
+                                                    .box {
+                                                        position: fixed;
+                                                        top:0;
+                                                        right: 0;
+                                                    }     
+                                                </code>
+                                            </pre>  
+                                            
+                                                
+                                            
+    
+                                </ul>
+
+                                
+                        
+                        </ul>
+                    </ul>
+                </li>
+            
+
+                    
+</body>
+</html>
