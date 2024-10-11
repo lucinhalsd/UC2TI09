@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>grid layout</title>
     <style>
@@ -16,27 +13,37 @@
             display: grid;
             grid-template-columns: 200px 1fr 200px;
             grid-template-rows: 100px 1fr 100px;
+            grid-template-areas: 
+                "header header header"
+                "nav main aside"
+                "nav main anuncio"
+                "footer footer footer"
+            ;
             gap: 10px;
             height: 100vh;
         }
         header {
-            grid-column: 1 / -1;
+            grid-area: header;
             background-color: lightblue;
         }
         nav {
-            grid-column: 1 / 2;
-            background: lightseagreen;
+             grid-area: nav;
+             background: lightseagreen;
         }
         main {
-            grid-column: 2 /3;
+            grid-area: main;
             background: lightcoral;
         }
         aside {
-            grid-column: 3 / 4;
-            background: lightgoldenrodyellow;
+             grid-area: aside;
+             background: lightgoldenrodyellow;
+        }
+        .Anuncio {
+            grid-area:anuncio;
+            background: darkgoldenrod;
         }
         footer {
-            grid-column: 1 / -1;
+            grid-area: footer;
             background-color: lightgray;
         }
         @media (max-width: 700px) {
@@ -45,7 +52,7 @@
                 grid-template-rows: auto;
             }
             header, nav, main, aside, footer {
-                grid-column: 1/2;
+                grid-column: ;
             }
             }
         
@@ -57,6 +64,7 @@
         <nav>Menu</nav>
         <main>Content</main>
         <aside>Sidebar</aside>
+        <div class= "anuncio" Anuncio></div>
         <footer>Footer</footer>
     </div>
     
